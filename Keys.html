@@ -1,83 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="phone.css">
     <style>
-  .h1 {
-  text-align: center;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 0px;
-  text-shadow: 0 0 10px rgba(0, 245, 212, 0.8), 0 0 20px rgba(0, 180, 216, 0.6);
-}
-    body {
-  background: linear-gradient(135deg, #00f5d4, #00bbf9, #0077b6, #03045e);
-  background-size: 300% 300%;
-  animation: aquaFlow 12s ease infinite;
-  color: #ffffff; /* text color suggestion */
-}
+        .h1 {
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 0px;
+            text-shadow: 0 0 10px rgba(0, 245, 212, 0.8), 0 0 20px rgba(0, 180, 216, 0.6);
+        }
 
-@keyframes aquaFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+        body {
+            background: linear-gradient(135deg, #00f5d4, #00bbf9, #0077b6, #03045e);
+            background-size: 300% 300%;
+            animation: aquaFlow 12s ease infinite;
+            color: #ffffff;
+            /* text color suggestion */
+        }
 
-img{
-    height: 200px;
-    border-radius: 50%;
-    width : 200px;
-    margin-top:-154px;
-    margin-right: 10px;
-}
-    .nav {
-    display: flex;
-    overflow: hidden;
-    backdrop-filter: blur(10px);
-    align-items: center;
-    color: #ffffff; /* clean white text */
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s ease;
-  border: 2px solid white;
-  border-color: unset white;
-    justify-content: right
-    
-};
-.nav ul {
-    
-    list-style-type: none;
-}
+        @keyframes aquaFlow {
+            0% {
+                background-position: 0% 50%;
+            }
 
-.nav a {
-   
-    text-decoration: none;
-    color: white;
-    
-}
+            50% {
+                background-position: 100% 50%;
+            }
 
-.nav a:hover {
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
-  color: #03045e;   
-  border-radius: 5px;
-}
+        img {
+            height: 200px;
+            border-radius: 50%;
+            width: 200px;
+            margin-top: -154px;
+            margin-right: 10px;
+        }
 
-.nav li {
- padding: 10px;
-    list-style-type: none;
-    font-size: 25px;
-    float: left;
-}
+        .nav {
+            display: flex;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            align-items: center;
+            color: #ffffff;
+            /* clean white text */
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s ease;
+            border: 2px solid white;
+            border-color: unset white;
+            justify-content: right
+        }
 
-*{
-    margin: 0;
-    padding: 0;
-}
-.Hazard main {
+        ;
+
+        .nav ul {
+
+            list-style-type: none;
+        }
+
+        .nav a {
+
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .nav a:hover {
+
+            color: #03045e;
+            border-radius: 5px;
+        }
+
+        .nav li {
+            padding: 10px;
+            list-style-type: none;
+            font-size: 25px;
+            float: left;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Hazard main {
             color: white;
             font-size: 20px;
             text-align: center;
@@ -90,23 +107,24 @@ img{
             font-weight: 700;
             padding: 10px;
             font-size: 20px;
-             padding-left: 10px;
             text-align: left;
         }
 
         .contain .Hazard {
             background: rgb(207, 55, 55);
-            text-align: center;
             width: 400px;
-            height: 200px;
+            font-size: 20px;
+            background: linear-gradient(135deg, #0077b6, #00f5d4);
+            color: #ffffff;
             border-radius: 15px;
             padding: 20px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
             position: relative;
-            
-            border-radius: 8px;
+            height: 350px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
         }
 
         .Hazard:hover {
@@ -116,11 +134,11 @@ img{
 
         .contain .Calamity {
             text-align: center;
-            
+            margin-left: 230px;
             background: #a10000;
             width: 400px;
-            
-            background: linear-gradient(135deg, #0077b6, #00f5d4);
+
+            background: linear-gradient(90deg, #ff0000, #ff4da6);
 
             border-radius: 15px;
             padding: 20px;
@@ -128,7 +146,7 @@ img{
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
             position: relative;
-            height: 200px;
+            height: 350px;
             border-radius: 8px;
         }
 
@@ -144,9 +162,9 @@ img{
         }
 
         .Calamity ul {
-             padding-left: 10px;
             list-style-type: disc;
             font-size: 20px;
+            padding: 20px;
             text-align: left;
 
         }
@@ -154,11 +172,8 @@ img{
         .contain1 .Disaster {
             text-align: center;
             width: 400px;
-           
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            background: linear-gradient(135deg, #6a0dad, #d000b0);
+            height: 350px;
+            background: linear-gradient(90deg, #ff4d4d, #b30000);
             border-radius: 15px;
             padding: 20px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
@@ -178,8 +193,8 @@ img{
         .Disaster ul {
             list-style-type: disc;
             font-size: 20px;
-             padding-left: 10px;
            text-align: left;
+           padding: 20px;
         }
 
         .Disaster:hover {
@@ -188,11 +203,9 @@ img{
         }
 
         .contain1 .Conqueror {
-            
-           
-           background: linear-gradient(135deg, #ffd60a, #ffc300, #ff9e00);
-
-
+            text-align: center;
+            margin-left: 230px;
+            background: linear-gradient(135deg, #6a0dad, #d000b0);
             color: #ffffff;
             border-radius: 15px;
             padding: 20px;
@@ -200,10 +213,8 @@ img{
             text-align: center;
             transition: transform 0.3s, box-shadow 0.3s;
             position: relative;
-            display: flex;
-            justify-content: center;
             width: 400px;
-            height: 200px;
+            height: 350px;
             border-radius: 8px;
         }
 
@@ -220,10 +231,9 @@ img{
         .Conqueror ul {
             list-style-type: none;
             font-size: 20px;
-            word-spacing: 10px;
+            padding: 20px;
             justify-content: center;
             text-align: left;
-            padding-left: 10px;
 
         }
         .Conqueror li{
@@ -233,19 +243,16 @@ img{
 
         .contain1 {
             display: flex;
-          justify-content: center;
-           gap: 20px 10px;
-            
+            gap: 10px 20px ;
+            justify-content: center;
         }
 
         .contain {
-            justify-content: center;
-         
+            gap: 10px 35px;
             display: flex;
-            gap: 30px 20px;
-            
+            justify-content: center;
         }
-                .discord {
+        .discord {
   display: flex;
   justify-content: center;
 }
@@ -263,81 +270,120 @@ img{
   cursor: pointer;
   transition: 0.3s ease;
 }
-
-
-
     </style>
 </head>
+
 <body>
-      <div class="nav">
+    <div class="nav">
         <nav>
             <ul>
                 <li><a href="index.html">Hᴏᴍᴇ</a></li>
                 <li><a href="ranks.html">Rᴀɴᴋꜱ</a></li>
                 <li><a href="Keys.html">Kᴇʏꜱ</a></li>
             </ul>
-        </div>
-        <br>
+    </div>
+    <br>
     <div class="h1">
-        <h1> Tᴇᴍᴘᴇꜱᴛ  Nᴇᴛᴡᴏʀᴋ <br> Kᴇʏꜱ</h1>
+        <h1>Tᴇᴍᴘᴇꜱᴛ Nᴇᴛᴡᴏʀᴋ<br> Rᴀɴᴋꜱ </h1>
     </div>
     <img src="ezgif.com-webp-to-png-converter.png" alt="" srcset="">
     <br>
-    <div class="all">
+    <div class="contain">
+        <span class="Hazard">
+            <main>
 
-        <div class="contain">
-            <span class="Hazard">
-                <main>
-                    
-                    <h1> 🔥ɪɴꜰᴇʀɴᴏ ᴄʀᴀᴛᴇ <br> ᴋᴇʏ </h1>
-                    <ul>
-                        <li>ᴘʀɪᴄᴇ - ʀꜱ 𝟣𝟢</li>
-                    </ul>
-                </main>
-            </span>
-            <span class="Calamity">
-                <main>
-                    <h1>❄️ꜰʀᴏꜱᴛ ᴄʀᴇᴀᴛᴇ <br> ᴋᴇʏ</h1>
+
+                <h1>ʜᴀᴢᴀʀᴅ - Rs 50</h1>
+
+                <br>
+                <h2>ᴘᴇʀᴋꜱ ⬇️</h2>
+                <br>
+                <ul>
+                    <li>/echest</li>
                     <br>
-                    <ul>
-                        <li>ᴘʀɪᴄᴇ - ʀꜱ 𝟤𝟧</li>
-                    </ul>
-                </main>
-            </span>
-        </div>
+                    <li>/ecraft</li>
+                    <br>
+                    <li>+1 Vault</li>
+                    <br>
+                    <li>Hazard Kit</li>
+                    <br>
+                    <li>+1 Home</li>
+                    <br>
+                </ul>
+            </main>
+        </span>
+        <span class="Calamity">
+            <main>
+                <h1>ᴄᴀʟᴀᴍɪᴛʏ -Rs 150</h1>
+                <br>
+                <h2>ᴘᴇʀᴋꜱ ⬇️</h2>
+                <br>
+                <ul>
+                    <li>All Perks of Hazard</li>
+                    <br>
+                    <li>/eanvil</li>
+                    <br>
+                    <li>+2 Vault</li>
+                    <br>
+                    <li>Calmity Kit</li>
+                    <br>
+                    <li>+2 Home</li>
+                    <br>
+                </ul>
+            </main>
+        </span>
+    </div>
+    <br>
+    <div class="contain1">
+        <span class="Disaster">
+            <main>
+                <h1>ᴅɪꜱᴀꜱᴛᴇʀ -Rs 250</h1>
+                <br>
+                <h2>ᴘᴇʀᴋꜱ ⬇️</h2>
+                <br>
+                <ul>
+                    <li>All Perks of Calamity</li>
+                    <br>
+                    <li>1 Custom Weapon(Random)</li>
+                    <br>
+                    <li>+3 Vault</li>
+                    <br>
+                    <li>Disaster Kit</li>
+                    <br>
+                    <li>+3 Home</li>
+                    <br>
+                </ul>
+            </main>
+        </span>
         <br>
-        <div class="contain1">
-            <span class="Disaster">
-                <main>
-                    <h1>🌀ᴠᴏʀᴛᴇx ᴄʀᴇᴀᴛᴇ <br> ᴋᴇʏ</h1>
+        <br>
+
+        <span class="Conqueror">
+            <main>
+                <h1>ᴄᴀᴛᴀꜱᴛʀᴏᴘʜᴇ -Rs 300</h1>
+                <br>
+                <h2>ᴘᴇʀᴋꜱ ⬇️</h2>
+                <br>
+                <ul>
+                    <li>All Perks of Disaster</li>
                     <br>
-                    <ul>
-                        <li>ᴘʀɪᴄᴇ - Rs 𝟥𝟧</li>
-                    </ul>
-                </main>
-            </span>
-            <br>
-            <br>
-            
-            <div class="Conqueror">
-                <main>
-                    <h1>🌍ᴇxᴛʀᴀꜱ</h1>
+                    <li>1 Custom Weapon(Can Choose)</li>
                     <br>
-                    <ul>
-                        <li>ᴇxᴛʀᴀ ᴠᴀᴜʟᴛ : ʀꜱ-𝟤𝟢</li>
-                        <br>
-                        <li>/ɴɪᴄᴋ(ᴄᴀɴ ᴄʜᴀɴɢᴇ ᴛʜᴇɪʀ ᴜꜱᴇʀɴᴀᴍᴇ) : Rs 25 </li>
-                    </ul>
-                </main>
-            </div>
-            <br>
-        </div>
+                    <li>+4 Vault</li>
+                    <br>
+                    <li>ᴄᴀᴛᴀꜱᴛʀᴏᴘʜᴇ Kit</li>
+                    <br>
+                    <li>+4 Home</li>
+                    <br>
+                </ul>
+            </main>
+        </span>
     </div>
     <br>
     <div class="discord">
-    <a href="https://discord.gg/euGFXRUc3y">Join The Discord</a>
+        <a href="https://discord.gg/euGFXRUc3y">Join The Discord</a>
     </div>
+    <br>
 </body>
 
 </html>
-
